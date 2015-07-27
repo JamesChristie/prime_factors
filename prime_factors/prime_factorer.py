@@ -5,3 +5,6 @@ class PrimeFactorer:
 
   def generate(self):
     self.result = []
+
+    if self.factorable > 1:
+      self.result.append(2)
