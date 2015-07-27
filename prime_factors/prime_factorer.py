@@ -1,10 +1,20 @@
 class PrimeFactorer:
   def __init__(self, factorable):
     self.factorable = factorable
-    self.result     = None
+    self.primes     = None
 
   def generate(self):
-    self.result = []
+    self.primes = []
+
+    if self.__two_is_factor():
+      self.primes.append(2)
+      self.factorable /= 2
 
     if self.factorable > 1:
-      self.result.append(self.factorable)
+      self.primes.append(self.factorable)
+
+  # Private
+
+  def __two_is_factor(self):
+    remainder = self.factorable % 2
+    return remainder == 0

@@ -8,7 +8,7 @@ class TestPrimeFactorerForOne(unittest.TestCase):
     self.factorer.generate()
 
   def test_one(self):
-    self.assertEqual(self.factorer.result, [])
+    self.assertEqual(self.factorer.primes, [])
 
 class TestPrimeFactorerForTwo(unittest.TestCase):
   def setUp(self):
@@ -16,7 +16,7 @@ class TestPrimeFactorerForTwo(unittest.TestCase):
     self.factorer.generate()
 
   def test_two(self):
-    self.assertEqual(self.factorer.result, [2])
+    self.assertEqual(self.factorer.primes, [2])
 
 class TestPrimeFactorerForThree(unittest.TestCase):
   def setUp(self):
@@ -24,7 +24,7 @@ class TestPrimeFactorerForThree(unittest.TestCase):
     self.factorer.generate()
 
   def test_two(self):
-    self.assertEqual(self.factorer.result, [3])
+    self.assertEqual(self.factorer.primes, [3])
 
 class TestPrimeFactorerForFour(unittest.TestCase):
   def setUp(self):
@@ -32,4 +32,4 @@ class TestPrimeFactorerForFour(unittest.TestCase):
     self.factorer.generate()
 
   def test_four(self):
-    self.assertEqual(self.factorer.result, [2, 2])
+    self.assertEqual(self.factorer.primes, [2, 2])
