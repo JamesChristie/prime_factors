@@ -7,4 +7,4 @@ class PrimeFactorer:
     self.result = []
 
     if self.factorable > 1:
-      self.result.append(2)
+      self.result.append(self.factorable)
