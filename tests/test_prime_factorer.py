@@ -8,4 +8,4 @@ class TestPrimeFactorerForOne(unittest.TestCase):
     self.factorer.generate()
 
   def test_one(self):
-    self.assertIsInstance(self.factorer.result, list)
+    self.assertEqual(self.factorer.result, [])
