@@ -33,3 +33,11 @@ class TestPrimeFactorerForFour(unittest.TestCase):
 
   def test_four(self):
     self.assertEqual(self.factorer.primes, [2, 2])
+
+class TestPrimeFactorerForSix(unittest.TestCase):
+  def setUp(self):
+    self.factorer = PrimeFactorer(6)
+    self.factorer.generate()
+
+  def test_four(self):
+    self.assertEqual(self.factorer.primes, [2, 3])
