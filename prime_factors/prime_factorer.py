@@ -6,7 +6,7 @@ class PrimeFactorer:
   def generate(self):
     self.primes = []
 
-    if self.__two_is_factor():
+    while self.__two_is_factor():
       self.primes.append(2)
       self.factorable = int(self.factorable / 2)
 
