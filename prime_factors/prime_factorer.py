@@ -14,9 +14,6 @@ class PrimeFactorer:
         )
       factor_candidate += 1
 
-    if self.factorable > 1:
-      self.primes.append(self.factorable)
-
   # Private
 
   def __two_is_factor(self, factor_candidate):
