@@ -25,3 +25,11 @@ class TestPrimeFactorerForThree(unittest.TestCase):
 
   def test_two(self):
     self.assertEqual(self.factorer.result, [3])
+
+class TestPrimeFactorerForFour(unittest.TestCase):
+  def setUp(self):
+    self.factorer = PrimeFactorer(4)
+    self.factorer.generate()
+
+  def test_four(self):
+    self.assertEqual(self.factorer.result, [2, 2])
