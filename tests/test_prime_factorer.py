@@ -2,6 +2,10 @@ import unittest
 
 from prime_factors.prime_factorer import PrimeFactorer
 
-class TestPrimeFactorer(unittest.TestCase):
+class TestPrimeFactorerForOne(unittest.TestCase):
   def setUp(self):
-    pass
+    self.factorer = PrimeFactorer(1)
+    self.factorer.generate()
+
+  def test_one(self):
+    self.assertIsInstance(self.factorer.result, list)
