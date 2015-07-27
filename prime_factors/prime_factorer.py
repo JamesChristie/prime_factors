@@ -8,7 +8,7 @@ class PrimeFactorer:
 
     if self.__two_is_factor():
       self.primes.append(2)
-      self.factorable /= 2
+      self.factorable = int(self.factorable / 2)
 
     if self.factorable > 1:
       self.primes.append(self.factorable)
