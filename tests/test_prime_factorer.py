@@ -17,3 +17,11 @@ class TestPrimeFactorerForTwo(unittest.TestCase):
 
   def test_two(self):
     self.assertEqual(self.factorer.result, [2])
+
+class TestPrimeFactorerForThree(unittest.TestCase):
+  def setUp(self):
+    self.factorer = PrimeFactorer(3)
+    self.factorer.generate()
+
+  def test_two(self):
+    self.assertEqual(self.factorer.result, [3])
